@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lochayde Oliveira - Portfólio & CV</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#6a9bee', // Indigo 600
+                        'secondary': '#38bdae', // Violet 500
+                        'bg-dark': '#212830', // Slate 900
+                        'card-dark': '#212830', // Slate 800
+                        'text-light': '#f1f5f9', // Slate 100
+                        'text-gray': '#94a3b8', // Slate 400
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <script>
+        // O Lucide é carregado globalmente; chamamos a função para renderizar os ícones.
+        // Fazemos uma verificação para garantir que a biblioteca foi carregada.
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+    </script>
+    <style>
+        /* Estilização para a tipografia padrão */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Efeito de hover suave para botões e links */
+        .btn-primary {
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
+        }
+        /* Animação de entrada sutil */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 0.8s ease-out;
+        }
+    </style>
+</head>
+
+<body class="bg-bg-dark text-text-light min-h-screen p-4 sm:p-8">
+    
+    <div class="max-w-6xl mx-auto">
+        
+
+        <header id="header" class="animate-fadeIn p-6 md:p-10 bg-card-dark rounded-xl shadow-2xl mb-12 border border-primary/30">
+            <div class="flex flex-col md:flex-row items-center md:justify-between">
+                <div class="moldura-perfil">
+                    <img src="assets/img/lochayde-oliveira-perfis.png" alt="Imagem de perfil de Lochayde Oliveira">                    
+                </div>                
+
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <h1 class="text-5xl font-extrabold text-primary mb-2">Lochayde Oliveira</h1>
+                    <p class="text-2xl font-light text-text-light/80">Especialista em E-commerce | Desenvolvedor Web</p>
+                </div>               
+
+                <div class="space-y-3 text-sm text-text-gray/90 md:text-base">
+                    <h2><strong>Conecte-se comigo:</strong></h2>
+                    <div class="flex items-center space-x-3">
+                        <i class="bi bi-envelope"></i>  
+                        <a href="mailto:lochaydeguerreiro@hotmail.com" class="hover:text-text-light">lochaydeguerreiro@hotmail.com</a>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>                           
+                            Caucaia - CE
+                        </span>                     
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="bi bi-whatsapp"></i>
+                        <span>(85) 99967-1024</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <section id="jornada" class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+            
+            <div class="lg:col-span-2 p-6 bg-card-dark rounded-xl shadow-lg border border-primary/20 animate-fadeIn">
+                <h2 class="text-3xl font-bold text-text-light mb-4 flex items-center space-x-2">
+                    <i data-lucide="rocket" class="w-6 h-6 text-secondary"></i>
+                    <span>Minha Jornada e Foco</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-rocket-takeoff" viewBox="0 0 16 16">
+                    <path d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532"/>
+                    <path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z"/>
+                    <path d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z"/>
+                    </svg>                    
+                </h2>
+                <p class="text-text-gray mb-6 text-lg font-medium">De E-commerce (Shopify/Yampi) a Full Stack Developer.</p>
+                
+                <ul class="space-y-3 text-text-light/90 list-disc pl-5">
+                    <li class="flex items-start">
+                        <i data-lucide="shopping-bag" class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-primary"></i>
+                        <span><strong>Atuação Profissional:</strong> Trabalho com criação e otimização de Lojas Virtuais (Shopify/Yampi).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="clapperboard" class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-primary"></i>
+                        <span><strong>Criação de Conteúdo:</strong> Produzo tutoriais e soluções em vídeo (YouTube) focado em soluções para E-commerce.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="code" class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-primary"></i>
+                        <span><strong>Foco de Estudo:</strong> Mergulhado no <strong>JavaScript Vanilla</strong> (lógica, DOM, manipulação de APIs assíncronas), construindo a base para a stack Node.js/MySQL.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="target" class="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-primary"></i>
+                        <span><strong>Meu Diferencial:</strong> Minha visão de E-commerce garante que o código não é apenas funcional, mas focado na Experiência do Usuário (UX) e conversão.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="p-6 bg-card-dark rounded-xl shadow-lg border border-primary/20 animate-fadeIn">
+                <h2 class="text-3xl font-bold text-text-light mb-4 flex items-center space-x-2">                    
+                    <span>Minhas Habilidades</span>
+                </h2>
+                <div class="space-y-4">
+                    
+                    <div class="border-b border-gray-700 pb-3">
+                        <h3 class="font-semibold text-text-light mb-2">Dominado (Front-end Base)</h3>
+                        <img src="https://skillicons.dev/icons?i=html,css" alt="Ícones de HTML, CSS e Tailwind CSS" class="w-auto h-auto"/>
+                    </div>
+                               
+                    <div class="border-b border-gray-700 pb-3">
+                        <h3 class="font-semibold text-text-light mb-2">Em Estudo (Fase 1: Lógica)</h3>
+                        <img src="https://skillicons.dev/icons?i=js" alt="Ícone de JavaScript" class="w-auto h-auto"/>
+                        <p class="text-sm text-text-gray mt-2">Foco em DOM, Assincronicidade e Estruturas de Dados.</p>
+                    </div>
+                    
+                    <div class="border-b border-gray-700 pb-3">
+                        <h3 class="font-semibold text-text-light mb-2">Futuro Foco (Back-end & SQL)</h3>
+                        <img src="https://skillicons.dev/icons?i=nodejs,mysql" alt="Ícones de Node.js, Express e MySQL" class="w-auto h-auto"/>
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold text-text-light mb-2">Ferramentas Essenciais</h3>
+                        <img src="https://skillicons.dev/icons?i=git,github" alt="Ícones de Git e GitHub" class="w-auto h-auto"/>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <section id="portfolio" class="mb-12">
+            <h2 class="text-4xl font-extrabold text-primary mb-8 text-center flex items-center justify-center space-x-3 animate-fadeIn">
+                <i data-lucide="layout-grid" class="w-7 h-7"></i>
+                <span>Portfólio de Projetos</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+
+                <div class="p-6 bg-card-dark rounded-xl shadow-xl border border-secondary/20 hover:border-secondary transition duration-300 transform hover:scale-[1.02] animate-fadeIn">
+                    <h3 class="text-2xl font-bold text-secondary mb-2 flex items-center space-x-2">
+                        <i data-lucide="user"></i>
+                        <span>Projetos Pessoais (Front-End/Lógica)</span>
+                    </h3>
+                    <p class="text-text-gray mb-4">Projetos criados do zero para praticar a lógica de JavaScript Vanilla e interação com o DOM. Demonstração de <strong>clean code</strong> e design responsivo.</p>
+                    
+                    <ul class="space-y-3">
+                        <li class="border-l-4 border-primary pl-4 py-1 bg-card-dark/50 rounded">
+                            <a href="https://github.com/LochaydeOliveira/led-sorteios---projeto-pessoal-01" target="_blank" class="font-medium hover:text-primary transition duration-200">
+                                Led Sorteios: Projeto Pessoal 01
+                            </a>
+                            <p class="text-sm text-text-gray/70">Sistema de sorteio em JavaScript puro (foco em Arrays e DOM).</p>
+                        </li>
+                        <li class="border-l-4 border-primary pl-4 py-1 bg-card-dark/50 rounded">
+                            <a href="#" target="_blank" class="font-medium hover:text-primary transition duration-200">
+                                Calculadora Funcional: Projeto Pessoal 02
+                            </a>
+                            <p class="text-sm text-text-gray/70">Prática de manipulação de eventos e lógica matemática.</p>
+                        </li>
+                    </ul>
+                </div>
+                
+
+                <div class="p-6 bg-card-dark rounded-xl shadow-xl border border-secondary/20 hover:border-secondary transition duration-300 transform hover:scale-[1.02] animate-fadeIn">
+                    <h3 class="text-2xl font-bold text-secondary mb-2 flex items-center space-x-2">
+                        <i data-lucide="graduation-cap"></i>
+                        <span>Projetos Desenvolvidos em Cursos</span>
+                    </h3>
+                    <p class="text-text-gray mb-4">
+                        Reuni aqui todos os projetos que desenvolvi ao longo da minha jornada em <strong>Desenvolvimento Web</strong>, produzidos em cursos, plataformas e instituições variadas.
+                    </p>
+                    
+                    <ul class="space-y-3">
+                        <li class="border-l-4 border-primary pl-4 py-1 bg-card-dark/50 rounded">
+                            <a href="https://lochaydeoliveira.github.io/portal-de-noticiais-projeto-4/" target="_blank" class="font-medium hover:text-primary transition duration-200">
+                                Notícias Cidade - Site Fictício
+                            </a>
+                            <p class="text-sm text-text-gray/70">
+                                Aqui eu coloquei em prática os conteúdos de HTML e CSS aprendidos no curso de Desenvolvimento Web na plataforma Udemy, criando o site Notícias Cidade como projeto final.
+                            </p>
+                        </li>
+
+                        <!-- <li class="border-l-4 border-primary pl-4 py-1 bg-card-dark/50 rounded">
+                            <a href="#" target="_blank" class="font-medium hover:text-primary transition duration-200">
+                                [Seu Projeto 4: Ex. Landing Page Customizada]
+                            </a>
+                            <p class="text-sm text-text-gray/70">Design de alta conversão e Front-end avançado.</p>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="text-center pt-8 border-t border-gray-700 mt-12 animate-fadeIn">
+            <h3 class="text-2xl font-semibold text-text-light mb-4">Me Siga</h3>
+            <div class="flex justify-center space-x-6">
+                
+                <a href="https://github.com/LochaydeOliveira" target="_blank" class="text-text-gray hover:text-primary transition duration-300 p-2 rounded-full bg-card-dark hover:bg-primary/20 shadow-lg">
+                    <i class="bi bi-github"></i>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/lochayde-oliveira-9735161a4" target="_blank" class="text-text-gray hover:text-primary transition duration-300 p-2 rounded-full bg-card-dark hover:bg-primary/20 shadow-lg">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                
+                <a href="https://www.youtube.com/channel/UC-8sj6djJyU_mByasgyn3yw" target="_blank" class="text-text-gray hover:text-primary transition duration-300 p-2 rounded-full bg-card-dark hover:bg-primary/20 shadow-lg">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                
+            </div>
+            <p class="text-text-gray text-sm mt-6">Desenvolvido por <strong>Lochayde Oliveira</strong> em 2025.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
